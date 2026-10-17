@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighthouse Coffee shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.0/css/boxicons.css" integrity="sha512-j+idvE15yGD+P0xIk4S6BDPdVT3PbJFkR6Ap6M6EBIbkTcD+E/2GJ/JYkMRHycfgkdKbn+wKaiPswUCZVNR9Gw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/logo.png" alt="Lighthouse Logo">
+                <div class="logo-text">
+                    <span class="brand-name">LIGHTHOUSE</span>
+                    <span class="brand-sub">COFFEE SHOP</span>
+                </div>
+            </div>
+            <ul id="navMenu">
+                <i class='bx Bx-x closeIcon' id="closeMenu"></i>
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À Propos</a></li>
+                <li><a href="#products">Produits</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="icons">
+                <i class='bx bx-cart'></i>
+                <i class='bx bx-search'></i>
+                <i class='bx bx-menu menuIcon' id="openMenu"></i>
+            </div>
+        </nav>
+        
+        <!-- main section--hero -->
+        <main id="home">
+            <!-- left section -->
+            <div class="left-section">
+                <h1>Commencez votre journée avec un Café</h1>
+                <p>Découvrez les arômes riches de nos grains de café fraîchement torréfiés,
+                 préparés avec passion pour un réveil d'exception au quotidien.</p>
+                <a href="#Products"><button>Shop now</button></a>
+            </div>
+            <div class="right-section">
+                <img src="image/service.png" alt="Coffee Cup">
+            </div>
+        </main>
+    </header>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="/image/service 4.jpg" alt="About Coffee">
+        </div>
+        <div class="about-text">
+            <h2>Notre Passion pour le Café</h2>
+            <p>Chez Lighthouse Coffee Shop, nous croyons que chaque tasse raconte une histoire. Des grains d'Arabica cueillis à la main aux méthodes de torréfaction expertes,
+            notre objectif est d'offrir une expérience inoubliable à chaque gorgée.</p>
+            <a href="#contact"><button >En savoir plus</button></a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <h2 class="section-title" style="text-align: center; color: var(--primary); margin-bottom: 30px; font-size: 38px;">Nos Produits</h2>
+        
+        
+        <div class="category-tabs">
+            <button class="cat-btn active" data-filter="all">Tous</button>
+            <button class="cat-btn" data-filter="moulu">Café Moulu</button>
+            <button class="cat-btn" data-filter="grain">Café en Grain</button>
+        </div>
+
+        <div class="products-container">
+            <div class="product-card" data-category="moulu">
+                <span class="badge">Moulu</span>
+                <img src="image/Mélange Beldi Épicé.jfif" alt="Mélange Beldi Épicé">
+                <h3>Mélange Beldi Épicé </h3>
+                <p>Le café marocain traditionnel. Un café moulu soigneusement mélangé avec des épices orientales
+                    (cannelle, gingembre, muscade) pour une saveur authentique et chaleureuse.</p>
+                <span class="price">45 MAD</span>
+                <button class="btn-buy">Ajouter au panier</button>
+            </div>
+
+            <div class="product-card" data-category="moulu">
+                <span class="badge">Moulu</span>
+                <img src="image/Espresso Corsé.jfif" alt="Espresso Corsé">
+                <h3> Espresso Corsé </h3>
+                <p>Une torréfaction très foncée. Un mélange audacieux d'Arabica et de Robusta,
+                    idéal pour les amateurs de café noir intense et plein de caractère.</p>
+                <span class="price">50 MAD</span>
+                <button class="btn-buy">Ajouter au panier</button>
+            </div>
+
+            <div class="product-card" data-category="moulu">
+                <span class="badge">Moulu</span>
+                <img src="image/Pur Arabica Doux.jfif" alt=" Pur Arabica Doux">
+                <h3> Pur Arabica Doux </h3>
+                <p>Un café 100% Arabica, léger et subtil. Sa mouture fine offre un équilibre parfait, 
+                idéal pour adoucir votre café au lait du matin (le fameux "Nouss Nouss").</p>
+                <span class="price">55 MAD</span>
+                <button class="btn-buy">Ajouter au panier</button>
+            </div>
+
+            <div class="product-card" data-category="grain">
+                <span class="badge badge-grain">En Grain</span>
+                <img src="image/Mélange Italien (Bar Blend).jfif" alt="Mélange Italien">
+                <h3>Mélange Italien</h3>
+                <p>Le secret des vrais cafés espresso ! Un assemblage parfait d'Arabica et de Robusta pour garantir 
+                un goût puissant et une crème (crema) épaisse et onctueuse.</p>
+                <span class="price">65 MAD</span>
+                <button class="btn-buy">Ajouter au panier</button>
+            </div>
+
+            <div class="product-card" data-category="grain">
+                <span class="badge badge-grain">En Grain</span>
+                <img src="image/Brésil Santos.jfif" alt="Brésil Santos">
+                <h3>Brésil Santos</h3>
+                <p> Des grains très appréciés pour leur douceur. 
+                Une torréfaction moyenne qui révèle des notes gourmandes de chocolat et de noisette grillée.</p>
+                <span class="price">55 MAD</span>
+                <button class="btn-buy">Ajouter au panier</button>
+            </div>
+
+            <div class="product-card" data-category="grain">
+                <span class="badge badge-grain">En Grain</span>
+                <img src="image/Colombie Excelso.jfif" alt="Colombie Excelso ">
+                <h3>Colombie Excelso </h3>
+                <p>Un choix d'excellence pour les connaisseurs. Des grains d'altitude offrant une belle rondeur
+                en bouche avec une touche subtilement fruitée et acidulée.</p>
+                <span class="price">60 MAD</span>
+                <button class="btn-buy">Ajouter au panier</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <h2 class="section-title" style="text-align: center; color: var(--primary); margin-bottom: 30px; font-size: 38px;">Contactez-Nous</h2>
+        <div class="contact-container">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h3>Passez Nous Voir ou Écrivez-Nous</h3>
+                <p>Une question sur nos moutures ou envie de passer une commande personnalisée ? Notre équipe de baristas est là pour vous répondre.</p>
+                
+                <div class="info-item">
+                    <i class='bx bx-map'></i>
+                    <span>Av. Mohamed Diouri, Kénitra 14000, Maroc</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-phone'></i>
+                    <span>+212 5 56 76 99 28</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-envelope'></i>
+                    <span>contact@lighthousecoffee.ma</span>
+                </div>
+                <div class="info-item">
+                    <i class='bx bx-time-five'></i>
+                    <span>Lundi - Dimanche : 09:30 - 23:30</span>
+                </div>
+            </div>
+
+            <!-- Contact section -->
+            <form class="contact-form" id="contactForm">
+                <div class="input-group">
+                    <input type="text" placeholder="Votre Nom" required>
+                    <input type="email" placeholder="Votre Email" required>
+                </div>
+                <input type="text" placeholder="Sujet de votre message" required>
+                <textarea rows="5" placeholder="Votre Message..." required></textarea>
+                <button type="submit">Envoyer le Message</button>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Lighthouse Coffee Shop. Tous droits réservés.</p>
+        <div class="socials">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-twitter'></i>
+        </div>
+    </footer>
+
+    <!-- JS File -->
+    <script src="script.js"></script>
+</body>
+</html>
